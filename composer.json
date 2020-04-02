@@ -1,0 +1,24 @@
+{
+    "name": "poyi/pgschema",
+    "description": "postgresql schemas for laravel 6",
+    "keywords" : ["laravel", "postgres"],
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Poyi Huang",
+            "email": "w67890w67890@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "6.*",
+        "illuminate/console": "6.*",
+        "illuminate/database": "6.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "poyi\\PGSchema\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
