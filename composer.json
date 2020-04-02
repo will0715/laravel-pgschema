@@ -16,9 +16,19 @@
         "illuminate/database": "6.*"
     },
     "autoload": {
-        "psr-0": {
-            "poyi\\PGSchema\\": "src/"
+        "psr-4": {
+            "Poyi\\PGSchema\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Poyi\\PGSchema\\PGSchemaServiceProvider"
+            ],
+            "aliases": {
+                "PGSchema": "Poyi\\PGSchema\\Facade\\PGSchema"
+            }
+        }
+    },
+    "minimum-stability": "dev"
 }
